@@ -1,7 +1,7 @@
 # ollama-chat
 ### Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
 ##### 1. Update Ubuntu OS
-```$ sudo apt update && sudo apt upgrade -y
+```$ sudo apt update && sudo apt upgrade -y```
 
 ##### 2. Install MicroK8s from snap on your system
 $ sudo snap install microk8s --channel=1.31-strict/stable
