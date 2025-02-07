@@ -13,7 +13,7 @@ spec:
   #  - ai.openbear.it
   #  secretName: ollama-tls
   rules:
-    - host: open-webui.apps.amperedemo.site
+    - host: <use your dns name>
       http:
         paths:
           - path: /
