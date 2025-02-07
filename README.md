@@ -1,4 +1,4 @@
-# ollama-chat on Ampere Processors
+# ollama-chat on Ampere processors
 ## Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
 #### 1. Update Ubuntu OS
 ```sudo apt update && sudo apt upgrade -y```
