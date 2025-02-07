@@ -1,5 +1,5 @@
 # ollama-chat
-### Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
+## Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
 ##### 1. Update Ubuntu OS
 ```sudo apt update && sudo apt upgrade -y```
 
@@ -44,7 +44,7 @@ sudo microk8s enable dashboard
 ##### 13. Retrieve token to access the Kubernetes dashboard
 ```sudo microk8s kubectl describe secret -n kube-system microk8s-dashboard-token```
 
-### Deploy Ollama-chat Demo
+## Deploy Ollama-chat Demo
 ##### 1. Create ollama-chat namespace
 ```kubectl create namespace ollama-chat```
 
