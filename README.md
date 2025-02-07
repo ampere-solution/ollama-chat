@@ -49,7 +49,7 @@ $ sudo microk8s kubectl describe secret -n kube-system microk8s-dashboard-token
 $ kubectl create namespace ollama-chat
 
 ##### Download deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml into a folder to deploy Ollama-chat Demo
-Note: 
+Note: use your dns name in the ingress.yaml file
 
 $ cd <folder you create which have these yaml files deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml>
 
