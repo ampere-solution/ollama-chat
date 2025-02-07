@@ -16,8 +16,8 @@
 ```sudo snap alias microk8s.kubectl kubectl```
 
 ##### 6. Create new group 
-```newgrp snap_microk8s
-groups```
+```newgrp snap_microk8s```
+```groups```
 
 ##### 7. Check the node status, run kubectl get node on your system
 $ kubectl get node -owide
