@@ -3,15 +3,7 @@ kind: Ingress
 metadata:
   name: ollama-ingress
   namespace: ollama-chat
-    #annotations:
-    #cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    #kubernetes.io/ingress.class: "traefik"
-    #traefik.ingress.kubernetes.io/router.middlewares: default-redirect-https@kubernetescrd
 spec:
-  #tls:
-  #- hosts:
-  #  - ai.openbear.it
-  #  secretName: ollama-tls
   rules:
     - host: <use.your.dns.name>
       http:
