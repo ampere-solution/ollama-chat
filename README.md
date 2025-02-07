@@ -34,7 +34,7 @@ $ sudo microk8s status
 $ kubectl get pod -A
 
 ##### Apply dashboard-ingress.yaml
-Note:  replace <your dashboard dns name> with your dns
+Note:  replace "your dashboard dns name" with your dns
 $ kubectl apply -f dashboard-ingress.yaml 
 
 ##### Check to see if ingress is created and using the correct <dashboard dns name>
