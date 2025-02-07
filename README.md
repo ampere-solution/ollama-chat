@@ -22,9 +22,10 @@
 ```kubectl get node -owide```
 
 ##### 8. Enable add-ons dns, hostpath-storage, ingress, dashboard
-```sudo microk8s enable hostpath-storage ingress```
+```sudo microk8s enable hostpath-storage ingress
+sudo microk8s enable dashboard
 
-```sudo microk8s enable dashboard```
+```
 
 ##### 9. Check the status to see if dns, hostpath-storage, ingress, dashboard are enabled
 ```sudo microk8s status```
@@ -33,7 +34,7 @@
 ```kubectl get pod -A```
 
 ##### 11. Apply dashboard-ingress.yaml
-Note:  replace "your dashboard dns name" with your dns
+*Note:  replace "your dashboard dns name" with your dns*
 
 ```kubectl apply -f dashboard-ingress.yaml``` 
 
@@ -48,7 +49,7 @@ Note:  replace "your dashboard dns name" with your dns
 ```kubectl create namespace ollama-chat```
 
 ##### 2. Download deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml into a folder to deploy Ollama-chat Demo
-Note: use your dns name in the ingress.yaml file
+*Note: use your dns name in the ingress.yaml file*
 
 ```cd <folder you create which have these yaml files deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml>```
 
