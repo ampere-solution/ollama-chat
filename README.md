@@ -21,7 +21,6 @@ $ groups
 
 ##### Check the node status, run kubectl get node on your system
 $ kubectl get node -owide
-cloudfest-demo         Ready    <none>   98d     v1.31.5   192.168.1.10   <none>        Ubuntu Core 20   5.15.0-130-generic   containerd://1.6.28
 
 ##### Enable add-ons dns, hostpath-storage, ingress, dashboard
 $ sudo microk8s enable hostpath-storage ingress
