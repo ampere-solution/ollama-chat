@@ -56,4 +56,6 @@ sudo microk8s enable dashboard
 #### 3. Apply the yaml files you just downloaded.
 ```kubectl apply -f ./ -n ollama-chat```
 
+#### Demo UI
+
 ![Ollama-chat](ollama-chat.png)
