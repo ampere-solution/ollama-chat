@@ -44,6 +44,10 @@ sudo microk8s enable dashboard
 #### 13. Retrieve token to access the Kubernetes dashboard
 ```sudo microk8s kubectl describe secret -n kube-system microk8s-dashboard-token```
 
+#### 14. Acess your dashboard webUI via http://use.your.dns.name
+
+#### 15. End the token you created in the previous step to login the Kubernetes Dashboard
+
 ## Deploy Ollama-chat Demo
 #### 1. Create ollama-chat namespace
 ```kubectl create namespace ollama-chat```
