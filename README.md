@@ -50,6 +50,7 @@ $ kubectl create namespace ollama-chat
 
 ##### Download deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml into a folder to deploy Ollama-chat Demo
 Note: 
+
 $ cd <folder you create which have these yaml files deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml>
 
 $ kubectl apply -f ./ -n ollama-chat
