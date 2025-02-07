@@ -1,3 +1,6 @@
 # ollama-chat
-## Create Single Node Microk8s
+### Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
+$ sudo apt update && sudo apt upgrade -y
+
+
 
