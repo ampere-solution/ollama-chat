@@ -1,23 +1,23 @@
 # ollama-chat
 ### Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
 ##### 1. Update Ubuntu OS
-```$ sudo apt update && sudo apt upgrade -y```
+```sudo apt update && sudo apt upgrade -y```
 
 ##### 2. Install MicroK8s from snap on your system
-$ sudo snap install microk8s --channel=1.31-strict/stable
+```sudo snap install microk8s --channel=1.31-strict/stable```
 
 ##### 3. Check the instance 'microk8s is running'
-$ sudo microk8s status --wait-ready | head -n4
+```sudo microk8s status --wait-ready | head -n4```
 
 ##### 4. Add your user to the ‘microk8s’ group for unprivileged access on your system
-$ sudo adduser $USER snap_microk8s
+```sudo adduser $USER snap_microk8s```
 
 ##### 5. Alias kubectl so it interacts with MicroK8s by default on your system
-$ sudo snap alias microk8s.kubectl kubectl
+```sudo snap alias microk8s.kubectl kubectl```
 
 ##### 6. Create new group 
-$ newgrp snap_microk8s
-$ groups
+```newgrp snap_microk8s
+groups```
 
 ##### 7. Check the node status, run kubectl get node on your system
 $ kubectl get node -owide
