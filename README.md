@@ -44,4 +44,13 @@ $ kubectl get ingress -A
 ##### Retrieve token to access the Kubernetes dashboard
 $ sudo microk8s kubectl describe secret -n kube-system microk8s-dashboard-token
 
+### Deploy Ollama-chat Demo
+##### Create ollama-chat namespace
+$ kubectl create namespace ollama-chat
+
+##### Download deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml into a folder to deploy Ollama-chat Demo
+$ cd <folder you create which have these yaml files deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml>
+
+$ kubectl apply -f ./ -n ollama-chat
+
 
