@@ -24,6 +24,7 @@ $ kubectl get node -owide
 
 ##### Enable add-ons dns, hostpath-storage, ingress, dashboard
 $ sudo microk8s enable hostpath-storage ingress
+
 $ sudo microk8s enable dashboard
 
 ##### Check the status to see if dns, hostpath-storage, ingress, dashboard are enabled
@@ -34,6 +35,7 @@ $ kubectl get pod -A
 
 ##### Apply dashboard-ingress.yaml
 Note:  replace "your dashboard dns name" with your dns
+
 $ kubectl apply -f dashboard-ingress.yaml 
 
 ##### Check to see if ingress is created and using the correct <dashboard dns name>
