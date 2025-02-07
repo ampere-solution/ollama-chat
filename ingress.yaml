@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ollama-ingress
+  namespace: ollama-chat
+    #annotations:
+    #cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    #kubernetes.io/ingress.class: "traefik"
+    #traefik.ingress.kubernetes.io/router.middlewares: default-redirect-https@kubernetescrd
+spec:
+  #tls:
+  #- hosts:
+  #  - ai.openbear.it
+  #  secretName: ollama-tls
+  rules:
+    - host: open-webui.apps.amperedemo.site
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: svc-open-webui
+                port:
+                  number: 8080

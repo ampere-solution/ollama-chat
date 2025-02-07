@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ollama
+  name: svc-ollama
+  namespace: ollama-chat
+spec:
+  ports:
+  - port: 11434
+  selector:
+    app: ollama
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: open-webui
+  name: svc-open-webui
+  namespace: ollama-chat
+spec:
+  ports:
+  - port: 8080
+  selector:
+    app: open-webui
