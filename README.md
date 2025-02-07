@@ -38,7 +38,7 @@ sudo microk8s enable dashboard
 
 ```kubectl apply -f dashboard-ingress.yaml``` 
 
-#### 12. Check to see if ingress is created and using the correct <dashboard dns name>
+#### 12. Check to see if ingress is created and using the correct "dashboard dns name"
 ```kubectl get ingress -A```
 
 #### 13. Retrieve token to access the Kubernetes dashboard
