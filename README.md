@@ -32,15 +32,6 @@ $ sudo microk8s status
 
 ##### Show running pods
 $ kubectl get pod -A
-NAMESPACE     NAME                                         READY   STATUS    RESTARTS   AGE
-ingress       nginx-ingress-microk8s-controller-2q7w4      1/1     Running   0          5m18s
-kube-system   calico-kube-controllers-759cd8b574-pjcqp     1/1     Running   0          60m
-kube-system   calico-node-pq9km                            1/1     Running   0          24m
-kube-system   coredns-7896dbf49-fhq8v                      1/1     Running   0          60m
-kube-system   dashboard-metrics-scraper-6b96ff7878-hdlnp   1/1     Running   0          3m27s
-kube-system   hostpath-provisioner-5fbc49d86c-qbs2z        1/1     Running   0          5m19s
-kube-system   kubernetes-dashboard-7d869bcd96-mzjfw        1/1     Running   0          3m27s
-kube-system   metrics-server-d6f74bb9f-5f7s8               1/1     Running   0          3m28s
 
 ##### Create dashboard-ingress.yaml file to access Kubernetes dashboard
 $ cat << EOF > dashboard-ingress.yaml
