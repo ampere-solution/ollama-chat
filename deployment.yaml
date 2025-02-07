@@ -15,8 +15,8 @@ spec:
       labels:
         app: ollama
     spec:
-      nodeSelector:
-        node-role: node2  
+      #nodeSelector:
+        #node-role: node2  
       containers:
       - image: ghcr.io/amperecomputingai/ollama-ampere:0.0.6-ol9
         name: ollama
@@ -96,8 +96,8 @@ spec:
       labels:
         app: open-webui
     spec:  
-      nodeSelector:
-        node-role: node2
+      #nodeSelector:
+        #node-role: node2
       volumes:
       - name: webui-data
         persistentVolumeClaim:
