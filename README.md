@@ -1,3 +1,5 @@
+Ollama is a platform that enables users to run large language models (LLMs) locally on their machines. It provides tools to download, manage, and interact with various open-source LLMs, facilitating tasks such as text generation and chat-based applications.
+
 # ollama-chat on Ampere processors
 ## Prepare and Deploy Single Node Microk8s (Ubuntu 22.04)
 #### 1. Update Ubuntu OS
