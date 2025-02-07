@@ -33,39 +33,8 @@ $ sudo microk8s status
 ##### Show running pods
 $ kubectl get pod -A
 
-##### Create dashboard-ingress.yaml file to access Kubernetes dashboard
-$ cat << EOF > dashboard-ingress.yaml
-kind: Ingress
-apiVersion: networking.k8s.io/v1
-metadata:
-  name: ingress-kubernetes-dashboard
-  namespace: kube-system
-  generation: 1
-  annotations:
-    kubernetes.io/ingress.class: public
-    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      chunked_transfer_encoding off;
-    nginx.ingress.kubernetes.io/proxy-body-size: '0'
-    nginx.ingress.kubernetes.io/proxy-ssl-verify: 'off'
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/server-snippet: |
-      client_max_body_size 0;
-spec:
-  rules:
-    - host: <your dashboard dns name> 
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: kubernetes-dashboard
-                port:
-                  number: 443
-EOF
-
 ##### Apply dashboard-ingress.yaml
+Note:  replace <your dashboard dns name> with your dns
 $ kubectl apply -f dashboard-ingress.yaml 
 
 ##### Check to see if ingress is created and using the correct <dashboard dns name>
