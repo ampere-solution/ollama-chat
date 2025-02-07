@@ -23,7 +23,7 @@
 
 ##### 8. Enable add-ons dns, hostpath-storage, ingress, dashboard
 ```sudo microk8s enable hostpath-storage ingress
-sudo microk8s enable dashboard
+```sudo microk8s enable dashboard
 
 ```
 
