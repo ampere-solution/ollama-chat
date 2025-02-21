@@ -37,7 +37,7 @@ sudo microk8s enable dashboard
 
 #### 11. Apply dashboard-ingress.yaml
 *Note:*  
-*Replace "your dashboard dns name" with your dns*
+*Replace "your dashboard dns name" with your dns.*
 *If you don't have dns name, you can set local dns as followed in the section "Run Demo using Local DNS"*       
 
 ```kubectl apply -f dashboard-ingress.yaml``` 
