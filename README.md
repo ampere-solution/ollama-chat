@@ -36,7 +36,9 @@ sudo microk8s enable dashboard
 ```kubectl get pod -A```
 
 #### 11. Apply dashboard-ingress.yaml
-*Note:  replace "your dashboard dns name" with your dns*
+*Note:*  
+*Replace "your dashboard dns name" with your dns*
+*If you don't have dns name, you can set local dns as followed in the section "Run Demo using Local DNS"*       
 
 ```kubectl apply -f dashboard-ingress.yaml``` 
 
@@ -67,3 +69,6 @@ sudo microk8s enable dashboard
 #### Demo UI
 
 ![Ollama-chat](ollama-chat.png)
+
+
+#### Run Demo using Local DNS
