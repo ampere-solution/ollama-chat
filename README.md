@@ -86,7 +86,7 @@ Lighter Display Manager which can be faster.
 #### 2. Create local hostnames for the setup
 edit /etc/hosts as follow:
 
-```127.0.0.1 localhost	dashboard.local ollama-chat.local```
+```127.0.0.1 localhost	   dashboard.local      ollama-chat.local```
 
 *Note:*
 
