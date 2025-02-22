@@ -89,5 +89,7 @@ edit /etc/hosts as follow:
 ```127.0.0.1 localhost	dashboard.local ollama-chat.local```
 
 *Note:*
+
 *dashboard.local* is used for kubernetes dashboard.
+
 *ollama-chat.local* is used for ollama-chat demo.
