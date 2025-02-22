@@ -38,7 +38,7 @@ sudo microk8s enable dashboard
 #### 11. Apply dashboard-ingress.yaml
 *Note:*  
 *Replace "your dashboard dns name" with your dns.*
-*If you don't have dns name, you can set local dns as followed in the section "Run Demo using Local DNS"*       
+*If you don't have dns name, you can set to use local hostname as followed in the section "Run Demo using Local Hostnames"*       
 
 ```kubectl apply -f dashboard-ingress.yaml``` 
 
@@ -59,7 +59,11 @@ sudo microk8s enable dashboard
 ```kubectl create namespace ollama-chat```
 
 #### 2. Download deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml into a folder to deploy Ollama-chat Demo
-*Note: use your dns name in the ingress.yaml file*
+*Note:* 
+
+*Use your dns name in the ingress.yaml file*
+
+*If you don't have dns name, you can use local hostname as followed in the section "Run Demo using Local Hostnames"*
 
 ```cd <folder you create which have these yaml files deployment.yaml, ingress.yaml, namespace.yaml, pvc.yaml, services.yaml>```
 
@@ -71,7 +75,7 @@ sudo microk8s enable dashboard
 ![Ollama-chat](ollama-chat.png)
 
 
-# Run Demo using Local DNS Names
+# Run Demo using Local Hostnames
 
 #### 1. Install the Lighter Display Manager for Ubuntu Desktop.
 There are many of diferent desktop environment which you can choose to install for the ubuntu Desktop.  Here I choose
@@ -90,6 +94,6 @@ edit /etc/hosts as follow:
 
 *Note:*
 
-*dashboard.local* is used for kubernetes dashboard.  In the step 11 "Apply dashboard-ingress.yaml", Replace "your dashboard dns name" with *dashboard.local*.
+*dashboard.local* is used for kubernetes dashboard.  In the step 11 "Apply dashboard-ingress.yaml" of the section "Prepare and Deploy Single Node Microk8s", Replace "your dashboard dns name" with *dashboard.local*.
 
-*ollama-chat.local* is used for ollama-chat demo.
+*ollama-chat.local* is used for ollama-chat demo.  In  the step 2 of the section "Deploy Ollama-chat Demo", Replace "your dns name" in the ingress.yaml file with *ollama-chat.local*
