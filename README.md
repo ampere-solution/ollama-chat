@@ -84,8 +84,10 @@ Lighter Display Manager which can be faster.
 ##### Restart the setup
 ```sudo reboot```
 #### 2. Create local hostnames for the setup
-vi /etc/hosts and edit as follow:
+edit /etc/hosts as follow:
+
 ```127.0.0.1 localhost	dashboard.local ollama-chat.local```
+
 *Note:*
 *dashboard.local* is used for kubernetes dashboard.
 *ollama-chat.local* is used for ollama-chat demo.
