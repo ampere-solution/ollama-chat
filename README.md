@@ -75,7 +75,7 @@ sudo microk8s enable dashboard
 ![Ollama-chat](ollama-chat.png)
 
 
-# Run Demo using Local Hostnames
+# Run Demo using Local Hostnames (Optional. if you don't have DNS Names and want to use local hostnames) 
 
 #### 1. Install the Lighter Display Manager for Ubuntu Desktop.
 There are many of diferent desktop environment which you can choose to install for the ubuntu Desktop.  Here I choose
