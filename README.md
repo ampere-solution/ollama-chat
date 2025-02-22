@@ -90,6 +90,6 @@ edit /etc/hosts as follow:
 
 *Note:*
 
-*dashboard.local* is used for kubernetes dashboard.
+*dashboard.local* is used for kubernetes dashboard.  In the step 11 "Apply dashboard-ingress.yaml", Replace "your dashboard dns name" with *dashboard.local*.
 
 *ollama-chat.local* is used for ollama-chat demo.
