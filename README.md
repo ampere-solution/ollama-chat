@@ -97,3 +97,5 @@ edit /etc/hosts as follow:
 *dashboard.local* is used for kubernetes dashboard.  In the step 11 "Apply dashboard-ingress.yaml" of the section "Prepare and Deploy Single Node Microk8s", Replace "your dashboard dns name" with *dashboard.local*.
 
 *ollama-chat.local* is used for ollama-chat demo.  In  the step 2 of the section "Deploy Ollama-chat Demo", Replace "your dns name" in the ingress.yaml file with *ollama-chat.local*
+
+
